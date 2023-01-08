@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/book-shortcut-icon.png" type="image/x-icon">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Plugings Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Title -->
+    <title>Boake - Book Store Shopify Theme</title>
+</head>
+
+<body class="bg-myrtle">
+    <div class="overlay"></div>
+
+
+    <!--======================== Header Part Start ========================-->
+
+    <header class="bg-myrtle ">
+        <div class="top_logo_area py-4 d-sm-block d-none">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-lg-2">
+                        <a href="index.html">
+                            <img src="assets/img/logo.png" class="w-125" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="input-border position-relative py-2">
+                            <input type="text" name="" class="bg-transparent work-sans text-white border-0 ps-2"
+                                style="outline: none;" placeholder="Search our store" id="">
+                            <button class="work-sans bg-fusion hover1 t-5" style="outline: none;">Search</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2  d-flex align-items-center justify-content-evenly text-end">
+                        <div class="cart-wrap">
+                            <div class="dropdown">
+                                <div id="iconCartI" class="icon ">
+                                    <span class="icon-cart">
+                                        <svg viewBox="0 0 32 32" class="t-5" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Layer_2" data-name="Layer 2">
+                                                <path
+                                                    d="m16 17.82a6 6 0 0 1 -5.89-4.82 1 1 0 0 1 1-1.15 1 1 0 0 1 1 .83 4 4 0 0 0 7.83 0 1 1 0 0 1 1-.83 1 1 0 0 1 1 1.15 6 6 0 0 1 -5.94 4.82z">
+                                                </path>
+                                                <path
+                                                    d="m24.9 31h-17.8a3 3 0 0 1 -3-3.15l.81-17.24a3 3 0 0 1 3-2.87h16.18a3 3 0 0 1 3 2.87l.81 17.24a3 3 0 0 1 -3 3.15zm-16.99-21.25a1 1 0 0 0 -1 1l-.81 17.2a1 1 0 0 0 1 1.05h17.8a1 1 0 0 0 1-1.05l-.81-17.24a1 1 0 0 0 -1-1z">
+                                                </path>
+                                                <path
+                                                    d="m22 8.75h-2v-1.75a4 4 0 0 0 -8 0v1.75h-2v-1.75a6 6 0 0 1 12 0z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span class="count-style bigcounter">0</span>
+                                    </span>
+                                </div>
+                                <ul class="cartDropDown text-start list-unstyled">
+                                    <li class="">
+                                        <div class="shopping-cart-content">
+                                            <div class="d-flex px-4 align-items-center justify-content-between">
+                                                <h5 class="text-white py-4">Shopping Cart</h5>
+                                                <a href="#" class="cart-close ">
+                                                    <i class="fa-regular fa-circle-xmark hover2 t-5 text-white"></i>
+                                                </a>
+                                            </div>
+                                            <ul>
+                                                <li class="item py-5">
+                                                    <div
+                                                        class="position-relative row justify-content-between align-items-center">
+                                                        <div class="col-lg-4 shopping-cart-img  text-start">
+                                                            <a href="">
+                                                                <img src="assets/img/product/product1.png" class="w-100"
+                                                                    alt="">
+                                                            </a>
+                                                            <div class="item-close">
+                                                                <a href="">
+                                                                    <i
+                                                                        class="fa-regular fa-circle-xmark text-white"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 shopping-cart-title">
+                                                            <h4>
+                                                                <a href=""
+                                                                    class="text-decoration-none text-white hover2 t-5 fw-normal work-sans ">
+                                                                    12. Unique content for each - red</a>
+                                                            </h4>
+                                                            <span class="text-white fw-semibold ls-1">1 x <span
+                                                                    class="money fw-semibold ls-1"
+                                                                    data-currency-usd="$99.00">$99.00</span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-unstyled">
+                                                <li class="px-4 pb-5">
+                                                    <div class="single-product-cart cart-bottom">
+                                                        <div class="shopping-cart-total py-2 border-top">
+                                                            <h4
+                                                                class="text-white fw-light  work-sans d-flex justify-content-between align-items-center">
+                                                                <span class="">Total:</span>
+                                                                <span class="work-sans"
+                                                                    data-currency-usd="$99.00">$99.00</span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="shopping-cart-btn btn-hover text-center">
+                                                            <a class="text-decoration-none text-white border hover3 t-5  py-2 d-block work-sans text-uppercase fw-semibold "
+                                                                href="">Checkout</a>
+                                                            <a class="text-decoration-none text-white border hover3 t-5 py-2 d-block work-sans text-uppercase fw-semibold mt-3"
+                                                                href="">View Cart</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="setting-wrap">
+                            <div class="dropdown">
+                                <div id="iconUserI" class="icon ">
+                                    <span class="icon-cart">
+                                        <svg viewBox="0 0 511 512" class="t-5 " xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m262.5 472h-201.308594c-8.539062 0-13.6875-4.765625-16-7.605469-3.988281-4.90625-5.53125-11.289062-4.234375-17.519531 20.769531-99.765625 108.8125-172.617188 210.453125-174.980469 1.6875.0625 3.382813.105469 5.089844.105469 74.988281 0 136-61.007812 136-136s-61.011719-136-136-136c-74.992188 0-136 61.007812-136 136 0 44.507812 21.492188 84.09375 54.644531 108.917969-30.371093 9.996093-58.875 25.546875-83.816406 46.0625-45.730469 37.617187-77.527344 90.085937-89.53125 147.742187-3.761719 18.066406.746094 36.621094 12.363281 50.910156 11.558594 14.214844 28.703125 22.367188 47.03125 22.367188h201.308594c11.042969 0 20-8.953125 20-20s-8.957031-20-20-20zm-102-336c0-52.933594 43.0625-96 96-96 52.933594 0 96 43.066406 96 96 0 52.175781-41.839844 94.761719-93.730469 95.972656-.746093-.085937-1.5-.140625-2.269531-.140625-1.5625 0-3.121094.023438-4.679688.050781-50.769531-2.445312-91.320312-44.515624-91.320312-95.882812zm352 275.980469c0 11.046875-8.957031 20-20 20h-150c-11.046875 0-20-8.953125-20-20 0-11.042969 8.953125-20 20-20h150c11.042969 0 20 8.957031 20 20zm-170-99.980469h150c11.042969 0 20 8.953125 20 20s-8.957031 20-20 20h-150c-11.046875 0-20-8.953125-20-20s8.953125-20 20-20zm170 180c0 11.046875-8.957031 20-20 20h-150c-11.046875 0-20-8.953125-20-20s8.953125-20 20-20h150c11.042969 0 20 8.953125 20 20zm0 0">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <ul class="userDropDown text-start list-unstyled">
+                                    <li class="px-4">
+                                        <h5 class="text-white py-4">Currency</h5>
+                                        <ul class="switcher-dropdown currency ps-0" id="currencies">
+                                            <li data-currency="USD" class="currency__item active ">
+                                                <a class="text-white text-decoration-none  hover2 t-5"
+                                                    style="cursor: pointer">USD - US Dollar</a>
+                                            </li>
+                                            <li data-currency="EUR" class="currency__item pt-3 ">
+                                                <a class="text-white text-decoration-none  hover2 t-5"
+                                                    style="cursor: pointer">EUR - Euro</a>
+                                            </li>
+                                            <li data-currency="GBP" class="currency__item pt-3 ">
+                                                <a class="text-white text-decoration-none  hover2 t-5"
+                                                    style="cursor: pointer">GBP - British Pound</a>
+                                            </li>
+                                        </ul>
+                                        <h5 class="text-white py-4">Account</h5>
+                                        <ul class="ps-0">
+                                            <li>
+                                                <a href="" class="text-white text-decoration-none  hover2 t-5"
+                                                    style="cursor: pointer">Login</a>
+                                            </li>
+                                            <li class=" py-3 ">
+                                                <a href="" class="text-white text-decoration-none  hover2 t-5"
+                                                    style="cursor: pointer">Create Account</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header-area d-sm-block d-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-9  ullist">
+                        <ul class="list-unstyled m-0 p-0">
+                            <li class="angle-shape ">
+                                <a href="index.html"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">Home</a>
+                            </li>
+                            <li class="angle-shape ">
+                                <a href="blog.html"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">Blog</a>
+                            </li>
+                            <li class="angle-shape ">
+                                <a href="shop.html"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">Shop</a>
+                            </li>
+                            <li class="angle-shape ">
+                                <a href="contact.html"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">Contact</a>
+                            </li>
+                            <li class="angle-shape ">
+                                <a href="about.html"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">About
+                                    Us</a>
+                            </li>
+                            <li class="angle-shape ">
+                                <a href=""
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">Pages</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 text-end">
+                        <div class="header_contact_info">
+                            <a href="tel:(+01)-800-3456"
+                                class="ls-1 fw-normal work-sans text-decoration-none text-white t-5">
+                                <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m512 304.097c0-36.963-28.145-67.473-64.129-71.235v-24.959c0-35.833-9.872-70.552-28.594-100.809 6.104-8.347 6.168-20.078-.574-28.554-39.734-49.914-99.037-78.54-162.703-78.54s-122.969 28.626-162.705 78.542c-6.74 8.474-6.676 20.204-.571 28.552-18.72 30.256-28.595 64.988-28.595 100.809v24.959c-35.984 3.762-64.129 34.272-64.129 71.235 0 37.247 28.582 67.933 64.963 71.308 3.259 13.948 15.788 24.37 30.715 24.37 17.396 0 31.548-14.152 31.548-31.548v-128.259c0-17.396-14.152-31.548-31.548-31.548-6.065 0-11.734 1.725-16.548 4.703v-5.22c0-32.722 8.932-64.454 25.88-92.157 8.922 2.635 18.967-.182 25.114-7.894 4.15-5.213 8.646-10.207 13.365-14.844 2.955-2.903 2.997-7.651.093-10.606-2.902-2.954-7.651-2.996-10.606-.093-5.152 5.062-10.06 10.513-14.585 16.197-2.934 3.681-8.316 4.292-11.994 1.367-3.681-2.93-4.292-8.31-1.363-11.991 36.871-46.318 91.896-72.882 150.966-72.882s114.095 26.564 150.965 72.88c2.93 3.683 2.319 9.063-1.36 11.992-1.526 1.214-3.36 1.856-5.303 1.856-2.623 0-5.061-1.173-6.689-3.218-33.613-42.227-83.771-66.446-137.613-66.446-33.667 0-66.338 9.507-94.479 27.493-3.49 2.23-4.511 6.868-2.28 10.358 2.23 3.49 6.867 4.512 10.358 2.28 25.724-16.44 55.601-25.131 86.401-25.131 49.246 0 95.126 22.156 125.878 60.788 4.491 5.641 11.206 8.876 18.424 8.876 2.268 0 4.514-.353 6.673-.994 16.956 27.708 25.896 59.43 25.896 92.169v5.22c-4.814-2.979-10.483-4.703-16.548-4.703-17.396 0-31.548 14.152-31.548 31.548v128.258c0 17.396 14.152 31.548 31.548 31.548 5.771 0 11.181-1.565 15.84-4.282-5.538 43.621-42.884 77.459-87.985 77.459h-49.521c-3.375-13.786-15.829-24.048-30.64-24.048h-16.032c-17.396 0-31.548 14.152-31.548 31.548s14.151 31.549 31.547 31.549h16.032c14.812 0 27.265-10.262 30.64-24.048h49.521c57.177 0 103.694-46.517 103.694-103.693v-8.927c35.984-3.762 64.129-34.272 64.129-71.235zm-497 0c0-28.681 21.438-52.434 49.129-56.117v112.234c-27.691-3.683-49.129-27.436-49.129-56.117zm80.677-80.678c9.125 0 16.548 7.423 16.548 16.548v128.258c0 9.125-7.423 16.548-16.548 16.548s-16.548-7.423-16.548-16.548v-128.257c0-9.125 7.423-16.549 16.548-16.549zm168.339 273.581h-16.032c-9.125 0-16.548-7.423-16.548-16.548s7.423-16.548 16.548-16.548h16.032c9.125 0 16.548 7.423 16.548 16.548s-7.423 16.548-16.548 16.548zm183.855-136.786v-72.149c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v80.162c0 9.125-7.423 16.548-16.548 16.548s-16.548-7.423-16.548-16.548v-128.259c0-9.125 7.423-16.548 16.548-16.548s16.548 7.423 16.548 16.548v16.032c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-8.02c27.691 3.682 49.129 27.436 49.129 56.117s-21.438 52.434-49.129 56.117z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                (+01)-800-3456
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Section Starts Here -->
+        <header class="header d-block d-sm-none bg-myrtle">
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-area row align-items-center justify-content-between">
+                        <div class="logo col-3">
+                            <a href="index-2.html">
+                                <img src="assets/img/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="col-9 d-flex justify-content-end ">
+                            <div class="basket">
+                                <span class="cart-resp position-relative">
+                                    <svg viewBox="0 0 32 32" class="t-5" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <path
+                                                d="m16 17.82a6 6 0 0 1 -5.89-4.82 1 1 0 0 1 1-1.15 1 1 0 0 1 1 .83 4 4 0 0 0 7.83 0 1 1 0 0 1 1-.83 1 1 0 0 1 1 1.15 6 6 0 0 1 -5.94 4.82z">
+                                            </path>
+                                            <path
+                                                d="m24.9 31h-17.8a3 3 0 0 1 -3-3.15l.81-17.24a3 3 0 0 1 3-2.87h16.18a3 3 0 0 1 3 2.87l.81 17.24a3 3 0 0 1 -3 3.15zm-16.99-21.25a1 1 0 0 0 -1 1l-.81 17.2a1 1 0 0 0 1 1.05h17.8a1 1 0 0 0 1-1.05l-.81-17.24a1 1 0 0 0 -1-1z">
+                                            </path>
+                                            <path d="m22 8.75h-2v-1.75a4 4 0 0 0 -8 0v1.75h-2v-1.75a6 6 0 0 1 12 0z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="count-resp bigcounter">0</span>
+                                </span>
+                                <ul class="list-unstyled menu-cart">
+                                    <li class="cart-top d-flex justify-content-between ">
+                                        <h4 class="text-white work-sans">Shoping Cart</h4>
+                                        <a class="shopping-cart-close">
+                                            <i class="fa-regular fa-circle-xmark text-white"></i>
+                                        </a>
+                                    </li>
+                                    <ul class="product-cart p-0 m-0">
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <a href="">
+                                                    <img src="assets/img/product/product1.png" class="w-75" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cart-title">
+                                                <h6 class="work-sans fw-normal">
+                                                    <a href="" class="text-decoration-none text-white hover2 t-5">
+                                                        <span class="ls-1">12. Unique content for each - red</span>
+                                                    </a>
+                                                </h6>
+                                                <span class="text-white work-sans ls-1">1 x <span class="money"
+                                                        data-currency-usd="$99.00">$99.00</span></span>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <div class="single-product-cart cart-bottom">
+                                                <div class="shopping-cart-total py-2">
+                                                    <h4
+                                                        class="text-white fw-light work-sans d-flex justify-content-between align-items-center">
+                                                        <span class="">Total:</span>
+                                                        <span class="work-sans" data-currency-usd="$99.00">$99.00</span>
+                                                    </h4>
+                                                </div>
+                                                <div class="shopping-cart-btn btn-hover text-center">
+                                                    <a class="text-decoration-none text-white border py-2 d-block work-sans text-uppercase fw-semibold "
+                                                        href="">Checkout</a>
+                                                    <a class="text-decoration-none text-white border py-2 d-block work-sans text-uppercase fw-semibold mt-3"
+                                                        href="">View Cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="header-trigger d-block d-lg-none ps-4">
+                                <span class="d-inline-block"></span>
+                            </div>
+                            <ul class="menu list-unstyled ">
+                                <li class="px-3">
+                                    <div class="mobile-search">
+                                        <div class="border d-flex justify-content-between w-100 p-0 m-0">
+                                            <input type="search" class="bg-transparent text-white border-0 ps-2"
+                                                style="outline: none;" placeholder="Search our store">
+                                            <a href="" class="px-3 py-3 border-start">
+                                                <i class="fa-solid fa-magnifying-glass  text-white  "></i>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="mobile-menu-wrap">
+                                        <ul class="p-0 m-0 text-start">
+                                            <li>
+                                                <a href="index.html"
+                                                    class="text-decoration-none work-sans  text-white   ">Home</a>
+                                            </li>
+                                            <li class="pt-3">
+                                                <a href="blog.html"
+                                                    class="text-decoration-none work-sans   text-white ">Blog</a>
+                                            </li>
+                                            <li class="pt-3">
+                                                <a href="blog.html"
+                                                    class="text-decoration-none work-sans   text-white ">Shop</a>
+                                            </li>
+                                            <li class="pt-3">
+                                                <a href="blog.html"
+                                                    class="text-decoration-none work-sans   text-white ">Contact</a>
+                                            </li>
+                                            <li class="pt-3">
+                                                <a href="blog.html"
+                                                    class="text-decoration-none work-sans   text-white ">About Us</a>
+                                            </li>
+                                            <li class="pt-3">
+                                                <a href="blog.html"
+                                                    class="text-decoration-none work-sans   text-white ">Pages</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mobile-curr-lang-wrap">
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="#"
+                                                    class="accordion text-decoration-none text-white hover2 t-5 d-flex justify-content-between"><span>Currency</span>
+                                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                            </li>
+                                            <div class="single-mobile-curr-lang pt-3">
+                                                <a
+                                                    class="mobile-account-active remove_href text-white hover2 t-5 d-flex justify-content-between text-decoration-none"><span>Account</span>
+                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                </a>
+                                                <div class="lang-curr-dropdown account-dropdown-active"
+                                                    style="display: none;">
+                                                    <ul class="list-unstyled text-start">
+                                                        <li class="pb-3"><a href=""
+                                                                class="text-decoration-none text-white hover2 t-5">Login</a>
+                                                        </li>
+                                                        <li><a href=""
+                                                                class="text-decoration-none text-white hover2 t-5">Create
+                                                                Account</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header Section Ends Here -->
+    </header>
+
+
+    <!--====== Sticky Header Start ======-->
+
+
+    <nav class="bg-myrtle nenujen">
+        <div class="top_logo_area py-4 d-sm-block d-none">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-lg-2">
+                        <a href="index.html">
+                            <img src="assets/img/logo.png" class="w-125" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-8  ullist">
+                        <ul class="list-unstyled m-0 p-0">
+                            <li class="angle-shape ">
+                                <a href="/"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">Home</a>
+                            </li>
+                            <li class="angle-shape ">
+                                <a href="/"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">Blog</a>
+                            </li>
+                            <li class="angle-shape ">
+                                <a href="/"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">Shop</a>
+                            </li>
+                            <li class="angle-shape ">
+                                <a href="/"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">Contact</a>
+                            </li>
+                            <li class="angle-shape ">
+                                <a href="/"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">About
+                                    Us</a>
+                            </li>
+                            <li class="angle-shape ">
+                                <a href="/"
+                                    class="work-sans fw-semibold text-decoration-none ls-1 text-white hover2 t-5">Pages</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2  d-flex align-items-center justify-content-evenly text-end">
+                        <div class="cart-wrap">
+                            <div class="dropdown">
+                                <div id="iconCartISticky" class="icon ">
+                                    <span class="icon-cart">
+                                        <svg viewBox="0 0 32 32" class="t-5" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Layer_2" data-name="Layer 2">
+                                                <path
+                                                    d="m16 17.82a6 6 0 0 1 -5.89-4.82 1 1 0 0 1 1-1.15 1 1 0 0 1 1 .83 4 4 0 0 0 7.83 0 1 1 0 0 1 1-.83 1 1 0 0 1 1 1.15 6 6 0 0 1 -5.94 4.82z">
+                                                </path>
+                                                <path
+                                                    d="m24.9 31h-17.8a3 3 0 0 1 -3-3.15l.81-17.24a3 3 0 0 1 3-2.87h16.18a3 3 0 0 1 3 2.87l.81 17.24a3 3 0 0 1 -3 3.15zm-16.99-21.25a1 1 0 0 0 -1 1l-.81 17.2a1 1 0 0 0 1 1.05h17.8a1 1 0 0 0 1-1.05l-.81-17.24a1 1 0 0 0 -1-1z">
+                                                </path>
+                                                <path
+                                                    d="m22 8.75h-2v-1.75a4 4 0 0 0 -8 0v1.75h-2v-1.75a6 6 0 0 1 12 0z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span class="count-style bigcounter">0</span>
+                                    </span>
+                                </div>
+                                <ul class="cartDropDownSticky text-start list-unstyled">
+                                    <li class="">
+                                        <div class="shopping-cart-content">
+                                            <div class="d-flex px-4 align-items-center justify-content-between">
+                                                <h5 class="text-white py-4">Shopping Cart</h5>
+                                                <a href="#" class="cart-close-sticky ">
+                                                    <i class="fa-regular fa-circle-xmark hover2 t-5 text-white"></i>
+                                                </a>
+                                            </div>
+                                            <ul>
+                                                <li class="item py-5">
+                                                    <div
+                                                        class="position-relative row justify-content-between align-items-center">
+                                                        <div class="col-lg-4 shopping-cart-img  text-start">
+                                                            <a href="">
+                                                                <img src="assets/img/product/product1.png" class="w-100"
+                                                                    alt="">
+                                                            </a>
+                                                            <div class="item-close">
+                                                                <a href="">
+                                                                    <i
+                                                                        class="fa-regular fa-circle-xmark text-white"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 shopping-cart-title">
+                                                            <h4>
+                                                                <a href=""
+                                                                    class="text-decoration-none text-white hover2 t-5 fw-normal work-sans ">
+                                                                    12. Unique content for each - red</a>
+                                                            </h4>
+                                                            <span class="text-white fw-semibold ls-1">1 x <span
+                                                                    class="money fw-semibold ls-1"
+                                                                    data-currency-usd="$99.00">$99.00</span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-unstyled">
+                                                <li class="px-4 pb-5">
+                                                    <div class="single-product-cart cart-bottom">
+                                                        <div class="shopping-cart-total py-2 border-top">
+                                                            <h4
+                                                                class="text-white fw-light  work-sans d-flex justify-content-between align-items-center">
+                                                                <span class="">Total:</span>
+                                                                <span class="work-sans"
+                                                                    data-currency-usd="$99.00">$99.00</span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="shopping-cart-btn btn-hover text-center">
+                                                            <a class="text-decoration-none text-white border hover3 t-5  py-2 d-block work-sans text-uppercase fw-semibold "
+                                                                href="">Checkout</a>
+                                                            <a class="text-decoration-none text-white border hover3 t-5 py-2 d-block work-sans text-uppercase fw-semibold mt-3"
+                                                                href="">View Cart</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="setting-wrap">
+                            <div class="dropdown">
+                                <div id="iconUserISticky" class="icon ">
+                                    <span class="icon-cart">
+                                        <svg viewBox="0 0 511 512" class="t-5 " xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m262.5 472h-201.308594c-8.539062 0-13.6875-4.765625-16-7.605469-3.988281-4.90625-5.53125-11.289062-4.234375-17.519531 20.769531-99.765625 108.8125-172.617188 210.453125-174.980469 1.6875.0625 3.382813.105469 5.089844.105469 74.988281 0 136-61.007812 136-136s-61.011719-136-136-136c-74.992188 0-136 61.007812-136 136 0 44.507812 21.492188 84.09375 54.644531 108.917969-30.371093 9.996093-58.875 25.546875-83.816406 46.0625-45.730469 37.617187-77.527344 90.085937-89.53125 147.742187-3.761719 18.066406.746094 36.621094 12.363281 50.910156 11.558594 14.214844 28.703125 22.367188 47.03125 22.367188h201.308594c11.042969 0 20-8.953125 20-20s-8.957031-20-20-20zm-102-336c0-52.933594 43.0625-96 96-96 52.933594 0 96 43.066406 96 96 0 52.175781-41.839844 94.761719-93.730469 95.972656-.746093-.085937-1.5-.140625-2.269531-.140625-1.5625 0-3.121094.023438-4.679688.050781-50.769531-2.445312-91.320312-44.515624-91.320312-95.882812zm352 275.980469c0 11.046875-8.957031 20-20 20h-150c-11.046875 0-20-8.953125-20-20 0-11.042969 8.953125-20 20-20h150c11.042969 0 20 8.957031 20 20zm-170-99.980469h150c11.042969 0 20 8.953125 20 20s-8.957031 20-20 20h-150c-11.046875 0-20-8.953125-20-20s8.953125-20 20-20zm170 180c0 11.046875-8.957031 20-20 20h-150c-11.046875 0-20-8.953125-20-20s8.953125-20 20-20h150c11.042969 0 20 8.953125 20 20zm0 0">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <ul class="userDropDownSticky text-start list-unstyled">
+                                    <li class="px-4">
+                                        <h5 class="text-white py-4">Currency</h5>
+                                        <ul class="switcher-dropdown currency ps-0" id="currencies">
+                                            <li data-currency="USD" class="currency__item active ">
+                                                <a class="text-white text-decoration-none  hover2 t-5"
+                                                    style="cursor: pointer">USD - US Dollar</a>
+                                            </li>
+                                            <li data-currency="EUR" class="currency__item pt-3 ">
+                                                <a class="text-white text-decoration-none  hover2 t-5"
+                                                    style="cursor: pointer">EUR - Euro</a>
+                                            </li>
+                                            <li data-currency="GBP" class="currency__item pt-3 ">
+                                                <a class="text-white text-decoration-none  hover2 t-5"
+                                                    style="cursor: pointer">GBP - British Pound</a>
+                                            </li>
+                                        </ul>
+                                        <h5 class="text-white py-4">Account</h5>
+                                        <ul class="ps-0">
+                                            <li>
+                                                <a href="" class="text-white text-decoration-none  hover2 t-5"
+                                                    style="cursor: pointer">Login</a>
+                                            </li>
+                                            <li class=" py-3 ">
+                                                <a href="" class="text-white text-decoration-none  hover2 t-5"
+                                                    style="cursor: pointer">Create Account</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--====== Sticky Header End ======-->
+
+
+    <!--======================== Header Part End ========================-->
+
+
+
+    <!--======================== Main Part Start ========================-->
+
+    <main>
+        <!--====== Breadcrumb-Area Start ======-->
+
+        <section class="breadcrumb-area py-5 py-sm-0">
+            <div class=" bg-shade text-center py-4">
+                <a href="index.html" class="  text-decoration-none text-white work-sans hover2 t-5">HOME </a>
+                <span class=" text-white  ">/</span>
+                <span class=" text-white   work-sans"> 11. PRODUCT WITH VIDEO</span>
+            </div>
+        </section>
+
+        <!--====== Breadcrumb-Area End ======-->
+
+
+        <!--====== Detail-Area Start ======-->
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="border position-relative">
+                            <img src="assets/img/feature-collection/featurecollection1.png" class="w-100" alt="">
+                            <a data-toggle="modal" href="#myModal" class="text-decoration-none text-white bg-fusion hover4 t-5 px-4 py-3 position-absolute bottom-0 start-0">
+                                <i class="fas fa-play"></i>
+                                <span>View Video</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 details col-12 pt-5 pt-sm-0">
+                        <h2 class="title text-white geometric ls-1">11. Product with video</h2>
+                        <span class="price d-block pb-3">
+                            <span class="money text-fusion work-sans fw-bold fs-3" data-currency-usd="$39.00"
+                                data-currency="USD">$39.00</span>
+                        </span>
+                        <span class="text-white d-block pb-3 fs-6 work-sans ">
+                            SKU: <span>9911</span>
+                        </span>
+                        <span class="text-white d-block pb-3 fs-6 work-sans ">
+                            Vendor: <span>Vendor11</span>
+                        </span>
+                        <span class="text-white d-block pb-3 fs-6 work-sans ">
+                            Type: <span>Vendor11</span>
+                        </span>
+                        <span class="text-white d-block pb-3 fs-6 work-sans ">
+                            Availability: <span>1 left in stock</span>
+                        </span>
+                        <p class="description text-white">As opposed to using 'Content here, content here', making it
+                            look like readable English. Many desktop publishing packages and web page editors now use
+                            Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many...
+                        </p>
+                        <ul class="list-unstyled text-white">
+                            <li class="">
+                                <span class="label">Book Name:</span>
+                                <span class="desc">11. Product with video</span>
+                            </li>
+                            <li>
+                                <span class="label">Author Name</span> 
+                                <span class="desc">
+                                    <a href="" class="text-decoration-none text-white hover2 t-5" title="Vendor 11">Vendor 11</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="label">Product Type</span> 
+                                <span class="desc">
+                                    <a href="" class="text-decoration-none text-white hover2 t-5" title="Type 11">Type 11</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="label">Item Publish Date</span>
+                                <span class="desc">2022 / 02 / 23</span>
+                            </li>
+                        </ul>
+                        <div class="product_additional_information pt-4">
+                            <a href="" class="text-decoration-none" data-modal>
+                                <i class="fa-solid fa-indent text-white "></i>
+                                <span class="text-white ps-2">Size Guide</span>
+                            </a>
+                            <a href="" class="text-decoration-none ps-4" data-toggle="modal" data-target="#shipping">
+                                <i class="las la-plane text-white "></i>
+                                <span class="text-white ps-2">Shipping</span>
+                            </a>
+                            <a href="" class="text-decoration-none ps-4" data-toggle="modal" data-target="#ask">
+                                <i class="las la-envelope text-white "></i>
+                                <span class="text-white ps-2">Ask About This Product</span>
+                            </a>
+                        </div>
+                        <div class="pro-details-quality py-4">
+                            <div class="quickview-plus-minus d-flex align-items-center pt-4">
+                                <div class="cart-plus-minus border py-3 d-flex justify-content-around align-items-center w-80">
+                                    <div class="minus text-white fw-bold" style="cursor: pointer;">-</div>
+                                    <input type="text" value="1" name="quantity" class="bg-transparent border-0 w-24 text-white" style="outline: none;">
+                                    <div class="plus text-white fw-bold" style="cursor: pointer;">+</div>
+                                </div>
+                                <div class="quickview-btn-cart ps-4">
+                                    <button type="submit"  class="bg-grey2 input-border text-uppercase text-white work-sans px-5 py-3 hover3 t-5 " style="outline: none;" id="addtocart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="bg-grey2 w-50 text-uppercase text-white work-sans px-5 py-3 border-0 hover3 t-5 " style="outline: none;">Buy it now</button>
+                        <div class="pro-details-meta pt-4 text-white">
+                            <span class="me-2 work-sans">Categories:</span>
+                            <a href="" class="text-decoration-none text-white hover2 work-sans t-5">Featured Products</a>,
+                            <a href="" class="text-decoration-none text-white hover2 work-sans ms-1 t-5">Upsell Products</a>
+                        </div>
+                        <div class="pro-details-meta pt-4 text-white">
+                            <span class="me-2 work-sans">Tags:</span>
+                            <a href="" class="text-decoration-none text-white hover2 work-sans t-5">black</a>,
+                            <a href="" class="text-decoration-none text-white hover2 work-sans ms-1 t-5">navy</a>,
+                            <a href="" class="text-decoration-none text-white hover2 work-sans ms-1 t-5">pink</a>,
+                            <a href="" class="text-decoration-none text-white hover2 work-sans ms-1 t-5">purple</a>,
+                            <a href="" class="text-decoration-none text-white hover2 work-sans ms-1 t-5">violet</a>
+                        </div>
+                        <!-- Share -->
+                        <div class="share-icons text-white  py-4">
+                            <span class="me-2 work-sans">Share:</span>
+                            <a href="https://www.facebook.com/" class="text-decoration-none bg-facebook ps-2 br-5 pe-1 text-black" target="_blank">
+                                <i class="fa-brands fa-facebook-f "></i>
+                            </a>
+                            <a href="https://www.twitter.com/" class="ms-2 text-decoration-none bg-twitter ps-1 br-5  text-black" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://www.pinterest.com/" class="ms-2 text-decoration-none bg-pinterest ps-2 br-5 pe-1 text-black" target="_blank">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== Detail-Area End ======-->
+
+    </main>
+
+    <!--======================== Main Part End ========================-->
+
+
+
+
+
+    <!--====== Details-Video Modal Part Start ======-->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">YouTube Video</h5>
+                    <button type="button" class="close bg-fusion text-white hover3 t-5 border-0 px-3 py-2" style="outline: none;" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="cartoonVideo" class="embed-responsive-item mw" width="450" height="315"
+                            src="https://www.youtube.com/embed/d_itbdC__Hg" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Details-Video Modal Part End ======-->
+
+    
+    <!--====== Details Size-Guide Model Part Start ======-->
+    <div class="modal1 ">
+        <div class="modal__dialog">
+            <div class="modal__content w-100">
+                <div data-close class="modal__close">
+                    <i class="fas fa-close"></i>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm">
+                        <tbody class="text-white">
+                            <tr>
+                                <td class="cun-name"><span>UK</span></td>
+                                <td>18</td>
+                                <td>20</td>
+                                <td>22</td>
+                                <td>24</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td class="cun-name"><span>European</span></td>
+                                <td>46</td>
+                                <td>48</td>
+                                <td>50</td>
+                                <td>52</td>
+                                <td>54</td>
+                            </tr>
+                            <tr>
+                                <td class="cun-name"><span>usa</span></td>
+                                <td>14</td>
+                                <td>16</td>
+                                <td>18</td>
+                                <td>20</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td class="cun-name"><span>Australia</span></td>
+                                <td>28</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>14</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td class="cun-name"><span>Canada</span></td>
+                                <td>24</td>
+                                <td>18</td>
+                                <td>14</td>
+                                <td>42</td>
+                                <td>36</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Details Size-Guide Model Part End ======-->
+
+    <!--====== Details Shipping Model Part Start ======-->
+    <div class="modal " id="shipping" tabindex="-1" role="dialog" aria-labelledby="shippingLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-shade">
+                <div class="modal-body ">
+                    <div class="d-flex align-items-center justify-content-between position-relative">
+                        <h4 class="text-white work-sans ">Shipping policy of our store</h4>
+                        <button type="button" class="close bg-transparent" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-close"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+                            hendrerit in vulputate</p>
+                        <ul class="list-unstyled text-white pt-3">
+                            <li>1-2 business days (Typically by end of day)</li>
+                            <li>30 days money back guaranty</li>
+                            <li>24/7 live support</li>
+                            <li>odio dignissim qui blandit praesent</li>
+                            <li>luptatum zzril delenit augue duis dolore</li>
+                            <li>te feugait nulla facilisi.</li>
+                            <li>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+                            </li>
+                            <li>possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum</li>
+                        </ul>
+                        <ul class="list-unstyled text-white pt-2">
+                            <li>claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
+                                etiam</li>
+                            <li>processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,
+                                quam</li>
+                            <li>nunc putamus parum claram, anteposuerit litterarum formas humanitatis per</li>
+                        </ul>
+                        <ul class="list-unstyled text-white pt-2">
+                            <li>seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant
+                                sollemnes in futurum.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Details Size-Guide Model Part End ======-->
+
+    <!--====== Details AskMe Model Part Start ======-->
+
+    <div class="modal " id="ask" tabindex="-1" role="dialog" aria-labelledby="askLabel">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content bg-shade">
+                <div class="modal-body ">
+                    <div class="d-flex border-bottom align-items-center justify-content-between position-relative">
+                        <h4 class="text-white work-sans ">Have a question?</h4>
+                        <button type="button" class="close bg-transparent" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-close"></i>
+                        </button>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-lg-6">
+                            <input type="text" class="w-100 border-0 py-2 ps-2" style="outline: none;" name="" id="" placeholder="Name *">
+                        </div>
+                        <div class="col-lg-6 pt-4 pt-sm-0">
+                            <input type="email" class="w-100 border-0 py-2 ps-2" style="outline: none;" name="" id="" placeholder="Email *">
+                        </div>
+                        <div class="col-lg-12 py-4">
+                            <input type="tel" class="w-100 border-0 py-2 ps-2" style="outline: none;" name="" id="" placeholder="Phone *">
+                        </div>
+                        <div class="col-lg-12 ">
+                            <input type="url" class="w-100 border-0 py-2 ps-2" style="outline: none;" name="" id="" placeholder="Reference URL *">
+                        </div>
+                        <div class="col-lg-12 py-4">
+                            <textarea class="w-100 border-0 py-2 ps-2 " style="outline: none;" name="" id="" placeholder="Write Message *" ></textarea>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <button type="submit" class="text-white px-5 py-3 bg-grey2 work-sans  hover3 t-5 border-0" style="outline: none;">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Details AskMe Model Part Start ======-->
+
+
+
+
+    <a href="#0" class="scrollToTop active"><i class="fa-solid fa-angle-up"></i></a>
+    <script src="assets/js/jquerry.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/is-in-viewport/3.0.4/isInViewport.min.js"
+        integrity="sha512-eAT5Hvi9/Yx33YvSUPOpAYEA3HnUt5oKCSyPGRQwNgqD7K/90JRpFnkaL1M6ROZtLkckQKJ4WYh9cS7Urr4YjA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
