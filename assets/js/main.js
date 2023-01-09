@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Sticky Menu
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         if ($(window).scrollTop() >= 200) {
             $('nav').addClass('header');
             $('.nenujen').css('display', 'block')
@@ -47,7 +47,7 @@ $(document).ready(function () {
         })
     })
     //Close-Dropdown
-    $(".cart-close").click((e)=>{
+    $(".cart-close").click((e) => {
         e.preventDefault();
         if ($(".cartDropDown").css("display") == "block") {
             $(".cartDropDown").css("display", "none");
@@ -70,7 +70,7 @@ $(document).ready(function () {
         })
     })
     //Close-Dropdown
-    $(".cart-close-sticky").click((e)=>{
+    $(".cart-close-sticky").click((e) => {
         e.preventDefault();
         if ($(".cartDropDownSticky").css("display") == "block") {
             $(".cartDropDownSticky").css("display", "none");
@@ -111,7 +111,7 @@ $(document).ready(function () {
         })
     })
 
-    
+
     // Responsive Menu
     var headerTrigger = $('.header-trigger');
     headerTrigger.on('click', function () {
@@ -128,17 +128,17 @@ $(document).ready(function () {
 
 
     // Responsive Menu2
-   
+
     var cartResp = $('.cart-resp');
     cartResp.on('click', function (e) {
         e.preventDefault();
         $('.menu-cart').toggleClass('active')
         $('.overlay').toggleClass('overlay-color')
         $('.overlay').removeClass('active')
-        
+
     });
     //Close-Button
-    $('.shopping-cart-close').on('click',(e)=>{
+    $('.shopping-cart-close').on('click', (e) => {
         e.preventDefault()
         $('.overlay').removeClass('overlay-color')
         $(".menu-cart").toggleClass('active')
@@ -150,7 +150,7 @@ $(document).ready(function () {
         $('.menu-cart, .header-trigger').removeClass('active')
     })
 
-    
+
 
 
     /*--- Accordion ----*/
@@ -386,9 +386,9 @@ $(document).ready(function () {
     })
 
     //About-Testimonials Slider
-     $('.about-testimonials-slider').slick({
+    $('.about-testimonials-slider').slick({
         dots: true,
-        appendDots:'.slick-dots-testimonial',
+        appendDots: '.slick-dots-testimonial',
         infinite: true,
         speed: 700,
         arrows: false,
@@ -474,12 +474,12 @@ $(document).ready(function () {
 
     //Modal
     var url = $("#cartoonVideo").attr('src');
-    
-    $("#myModal").on('hide.bs.modal', function(){
+
+    $("#myModal").on('hide.bs.modal', function () {
         $("#cartoonVideo").attr('src', '');
     });
-    
-    $("#myModal").on('show.bs.modal', function(){
+
+    $("#myModal").on('show.bs.modal', function () {
         $("#cartoonVideo").attr('src', url);
     });
 
@@ -500,8 +500,11 @@ $(document).ready(function () {
         return false;
     });
 
+    
+
 
 })
+
 
 
 
