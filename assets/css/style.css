@@ -40,55 +40,76 @@ html {
 
 
 
-
-
-#hola{
+#hola {
   width: 100vw;
   height: 100vh;
   background-color: black;
   position: fixed;
   z-index: 999;
 }
+
 #preloader {
-position:relative;
+  position: relative;
   width: 80px;
   height: 80px;
   top: 45%;
   margin: 0 auto;
 }
+
 #preloader span {
-position:absolute;
-border: 8px solid #ffe066;
-border-top: 8px solid transparent;
-border-radius:999px;
+  position: absolute;
+  border: 8px solid #ffe066;
+  border-top: 8px solid transparent;
+  border-radius: 999px;
 }
 
-#preloader span:nth-child(1){
-width:80px;
-height:80px;
-animation: spin-1 2s infinite linear;
+#preloader span:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  animation: spin-1 2s infinite linear;
 }
-#preloader span:nth-child(2){
-top: 20px;
-left: 20px;
-width:40px;
-height:40px;
-animation: spin-2 1s infinite linear;
+
+#preloader span:nth-child(2) {
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  animation: spin-2 1s infinite linear;
 }
+
 @keyframes spin-1 {
-0% {transform: rotate(360deg); opacity: 1;}
-50% {transform: rotate(180deg); opacity: 0.5;}
-100% {transform: rotate(0deg); opacity: 1;}
+  0% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
 }
+
 @keyframes spin-2 {
-0% {transform: rotate(0deg); opacity: 0.5;}
-50% {transform: rotate(180deg); opacity: 1;}
-100% {transform: rotate(360deg); opacity: 0.5;}
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.5;
+  }
 }
-
-
-
-
 
 
 
@@ -1733,6 +1754,23 @@ animation: spin-2 1s infinite linear;
     background-color: transparent;
   }
 
+
+  /* Cart-Mobile-Styles */
+  .remove-icon {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    height: 25px;
+    width: 25px;
+    background: #222;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+    border-radius: 50%;
+  }
+
+  
+
 }
 
 
@@ -1962,4 +2000,112 @@ td {
 .pro-pagination-style ul li {
   display: inline-block;
   margin: 0 4px;
+}
+
+
+
+/* Cart-Style */
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.cart-table table {
+  border-color: #ddd;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px 0 0 1px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.cart-table-content table {
+  border: 1px solid #ebebeb;
+}
+
+.cart-table-content table thead>tr {
+  border: 1px solid #ebebeb;
+}
+
+.cart-table table thead tr th {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: medium none;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.cart-table-content table thead>tr th {
+  border-top: medium none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 21px 45px 22px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.cart-table-content table tbody>tr {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.cart-table table tbody tr td.pro-thumbnail {
+  width: 130px;
+}
+
+.cart-table-content table tbody>tr td {
+  padding: 10px;
+}
+
+.cart-table table tbody tr td {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.cart-table-content table tbody>tr td {
+  font-size: 16px;
+}
+
+.cart-table table tbody tr td.pro-title {
+  width: 270px;
+}
+
+.cart-table table tbody tr td.pro-price {
+  width: 130px;
+}
+
+.cart-table-content table tbody>tr td.product-quantity {
+  width: 435px;
+}
+
+.cart-table table tbody tr td.pro-subtotal {
+  width: 120px;
+}
+
+.cart-table-content table tbody>tr td.product-remove {
+  width: 100px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 15px;
+  border: 1px solid #e5e5e5;
 }

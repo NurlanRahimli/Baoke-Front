@@ -1,53 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- Custom Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/book-shortcut-icon.png" type="image/x-icon">
 
     <!-- Icon Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <!-- Plugings Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="path_to/simplePagination.css"/>
+
 
 
     <!-- Fonts Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- Title -->
-    <title>Significant reading has info - Boake - Book Store Shopify Theme</title>
+    <title>Create Account - Boake - Book Store Shopify Theme</title>
 </head>
-
 <body class="bg-myrtle">
 
     <!-- Preloader -->
@@ -524,310 +508,160 @@
     <!--======================== Header Part End ========================-->
 
 
-
     <!--======================== Main Part Start ========================-->
-
     <main>
         <!--====== Breadcrumb-Area Start ======-->
 
         <section class="breadcrumb-area py-5 py-sm-0">
             <div class=" bg-shade text-center py-4">
                 <a href="index.html" class="  text-decoration-none text-white work-sans hover2 t-5">HOME </a>
-                <span class=" text-white  ">/</span>
-                <span class=" text-white   work-sans"> 11. PRODUCT WITH VIDEO</span>
+                <span class=" text-white">/</span>
+                <span class=" text-white work-sans">CREATE ACCOUNT</span>
             </div>
         </section>
 
         <!--====== Breadcrumb-Area End ======-->
 
 
-        <!--====== Detail-Area Start ======-->
-        <section class="my-5">
+        <!--====== Login-Area Start ======-->
+        <div class="login-area">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="border position-relative">
-                            <img src="assets/img/feature-collection/featurecollection1.png" class="w-100" alt="">
-                            <a data-toggle="modal" href="#myModal" class="text-decoration-none text-white bg-fusion hover4 t-5 px-4 py-3 position-absolute bottom-0 start-0">
-                                <i class="fas fa-play"></i>
-                                <span>View Video</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 details col-12 pt-5 pt-sm-0">
-                        <h2 class="title text-white geometric ls-1">11. Product with video</h2>
-                        <span class="price d-block pb-3">
-                            <span class="money text-fusion work-sans fw-bold fs-3" data-currency-usd="$39.00"
-                                data-currency="USD">$39.00</span>
-                        </span>
-                        <span class="text-white d-block pb-3 fs-6 work-sans ">
-                            SKU: <span>9911</span>
-                        </span>
-                        <span class="text-white d-block pb-3 fs-6 work-sans ">
-                            Vendor: <span>Vendor11</span>
-                        </span>
-                        <span class="text-white d-block pb-3 fs-6 work-sans ">
-                            Type: <span>Vendor11</span>
-                        </span>
-                        <span class="text-white d-block pb-3 fs-6 work-sans ">
-                            Availability: <span>1 left in stock</span>
-                        </span>
-                        <p class="description text-white">As opposed to using 'Content here, content here', making it
-                            look like readable English. Many desktop publishing packages and web page editors now use
-                            Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many...
-                        </p>
-                        <ul class="list-unstyled text-white">
-                            <li class="">
-                                <span class="label">Book Name:</span>
-                                <span class="desc">11. Product with video</span>
-                            </li>
-                            <li>
-                                <span class="label">Author Name</span> 
-                                <span class="desc">
-                                    <a href="" class="text-decoration-none text-white hover2 t-5" title="Vendor 11">Vendor 11</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="label">Product Type</span> 
-                                <span class="desc">
-                                    <a href="" class="text-decoration-none text-white hover2 t-5" title="Type 11">Type 11</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="label">Item Publish Date</span>
-                                <span class="desc">2022 / 02 / 23</span>
-                            </li>
-                        </ul>
-                        <div class="product_additional_information pt-4">
-                            <a href="" class="text-decoration-none" data-modal>
-                                <i class="fa-solid fa-indent text-white "></i>
-                                <span class="text-white ps-2">Size Guide</span>
-                            </a>
-                            <a href="" class="text-decoration-none ps-4" data-toggle="modal" data-target="#shipping">
-                                <i class="las la-plane text-white "></i>
-                                <span class="text-white ps-2">Shipping</span>
-                            </a>
-                            <a href="" class="text-decoration-none ps-4" data-toggle="modal" data-target="#ask">
-                                <i class="las la-envelope text-white "></i>
-                                <span class="text-white ps-2">Ask About This Product</span>
-                            </a>
-                        </div>
-                        <div class="pro-details-quality py-4">
-                            <div class="quickview-plus-minus d-flex align-items-center pt-4">
-                                <div class="cart-plus-minus border py-3 d-flex justify-content-around align-items-center w-80">
-                                    <div class="minus text-white fw-bold" style="cursor: pointer;">-</div>
-                                    <input type="text" value="1" name="quantity" class="bg-transparent border-0 w-24 text-white" style="outline: none;">
-                                    <div class="plus text-white fw-bold" style="cursor: pointer;">+</div>
-                                </div>
-                                <div class="quickview-btn-cart ps-4">
-                                    <button type="submit"  class="bg-grey2 input-border text-uppercase text-white work-sans px-5 py-3 hover3 t-5 " style="outline: none;" id="addtocart">Add to Cart</button>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 bg-white py-5 my-5">
+                        <div class="login">
+                            <div class="login-text">
+                                <h2 class="text-center fw-semibold geometric ls-1">Create Account</h2>
+                                <p class="text-grey2 text-center work-sans pb-4">Please Register using account detail bellow.</p>
+                            </div>
+                            <div class="login-form px-4">
+                                <input type="text" name="" id="" class="shadow py-2 ps-3 border-0 work-sans  w-100" style="outline: none;" placeholder="First Name">
+                                <input type="text" value="" name="" id="" class="shadow mt-4 work-sans py-2 ps-3 border-0 w-100" style="outline: none;" placeholder="Last Name" >
+                                <input type="email" name="" id="" class="shadow py-2 ps-3 mt-4 border-0 work-sans  w-100" style="outline: none;" placeholder="Email">
+                                <input type="password" name="" id="" class="shadow py-2 ps-3 mt-4 border-0 work-sans  w-100" style="outline: none;" placeholder="Password">
+
+                                <div class="login-toggle-btn pt-5">
+                                    <div class="form-action-button d-flex align-items-center justify-content-between">
+                                        <button type="submit" class="border-0 px-4 py-2 hover3 bg-transparent shadow t-5 work-sans" style="outline: none;">Create</button>
+                                    </div>
+                                    <div class="account-optional-action pt-4">
+                                        <a href="index.html" id="" class="text-decoration-none text-grey2 work-sans hover2 t-5">Return to Store</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="bg-grey2 w-50 text-uppercase text-white work-sans px-5 py-3 border-0 hover3 t-5 " style="outline: none;">Buy it now</button>
-                        <div class="pro-details-meta pt-4 text-white">
-                            <span class="me-2 work-sans">Categories:</span>
-                            <a href="" class="text-decoration-none text-white hover2 work-sans t-5">Featured Products</a>,
-                            <a href="" class="text-decoration-none text-white hover2 work-sans ms-1 t-5">Upsell Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== Login-Area End ======-->
+
+        <div>
+
+        </div>
+
+    </main>
+    <!--======================== Main Part End ========================-->
+
+
+    
+    <!--======================== Footer Part Start ========================-->
+    <footer>
+        <div class="pt-5" style="background-image: url(assets/img/banner/banner.png);overflow: hidden;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <a href="index.html">
+                            <img src="assets/img/footer-logo.png"  alt="">
+                        </a>
+                        <div class="subscribe-style pt-3 pb-sm-5 pb-3">
+                            <p class="text-white work-sans w-sm-75 w-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor inci ut labore et dolore consectetur adipisicing elit sed do eiusmod tempor.</p>
                         </div>
-                        <div class="pro-details-meta pt-4 text-white">
-                            <span class="me-2 work-sans">Tags:</span>
-                            <a href="" class="text-decoration-none text-white hover2 work-sans t-5">black</a>,
-                            <a href="" class="text-decoration-none text-white hover2 work-sans ms-1 t-5">navy</a>,
-                            <a href="" class="text-decoration-none text-white hover2 work-sans ms-1 t-5">pink</a>,
-                            <a href="" class="text-decoration-none text-white hover2 work-sans ms-1 t-5">purple</a>,
-                            <a href="" class="text-decoration-none text-white hover2 work-sans ms-1 t-5">violet</a>
-                        </div>
-                        <!-- Share -->
-                        <div class="share-icons text-white  py-4">
-                            <span class="me-2 work-sans">Share:</span>
-                            <a href="https://www.facebook.com/" class="text-decoration-none bg-facebook ps-2 br-5 pe-1 text-black" target="_blank">
-                                <i class="fa-brands fa-facebook-f "></i>
+                        <div class="footer-socials text-center text-sm-start">
+                            <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none text-white fs-4 work-sans hover2 t-5 ">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.twitter.com/" class="ms-2 text-decoration-none bg-twitter ps-1 br-5  text-black" target="_blank">
+                            <a href="https://www.twitter.com/" target="_blank" class="text-decoration-none text-white fs-4 work-sans hover2 t-5 ps-4">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
-                            <a href="https://www.pinterest.com/" class="ms-2 text-decoration-none bg-pinterest ps-2 br-5 pe-1 text-black" target="_blank">
+                            <a href="https://www.instagram.com/" target="_blank" class="text-decoration-none text-white fs-4 work-sans hover2 t-5 ps-4">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="text-decoration-none text-white fs-4 work-sans hover2 t-5 ps-4">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="https://www.pinterest.com/" target="_blank" class="text-decoration-none text-white fs-4 work-sans hover2 t-5 ps-4">
                                 <i class="fa-brands fa-pinterest-p"></i>
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!--====== Detail-Area End ======-->
-
-    </main>
-
-    <!--======================== Main Part End ========================-->
-
-
-
-
-
-    <!--====== Details-Video Modal Part Start ======-->
-    <div id="myModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">YouTube Video</h5>
-                    <button type="button" class="close bg-fusion text-white hover3 t-5 border-0 px-3 py-2" style="outline: none;" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe id="cartoonVideo" class="embed-responsive-item mw" width="450" height="315"
-                            src="https://www.youtube.com/embed/d_itbdC__Hg" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                    <div class="col-lg-2 col-6 pt-4">
+                        <div class="ms-sm-4 ms-0 ">
+                            <div class="footer-title ">
+                                <h5 class="text-white geometric ls-1 ms-3">Information</h5>
+                            </div>
+                            <div class="footer-list pt-4">
+                                <ul type="circle" class="text-white">
+                                    <li><a href="account.html" class=" text-decoration-none text-white hover2 t-5 work-sans">My account</a></li>
+                                    <li class="pt-3"><a href="about.html" class=" text-decoration-none text-white hover2 t-5 work-sans">About us</a></li>
+                                    <li class="pt-3"><a href="" class=" text-decoration-none text-white hover2 t-5 work-sans">Wish List</a></li>
+                                    <li class="pt-3"><a href="" class=" text-decoration-none text-white hover2 t-5 work-sans">Returns</a></li>
+                                    <li class="pt-3"><a href="" class=" text-decoration-none text-white hover2 t-5 work-sans">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6 pt-4">
+                        <div class="ms-sm-4 ms-0">
+                            <div class="footer-title ">
+                                <h5 class="text-white geometric ls-1 ms-3">Quick Links</h5>
+                            </div>
+                            <div class="footer-list pt-4">
+                                <ul type="circle" class="text-white">
+                                    <li><a href="account.html" class=" text-decoration-none text-white hover2 t-5 work-sans">New collection</a></li>
+                                    <li class="pt-3"><a href="about.html" class=" text-decoration-none text-white hover2 t-5 work-sans">Manufacturers</a></li>
+                                    <li class="pt-3"><a href="" class=" text-decoration-none text-white hover2 t-5 work-sans">New Products</a></li>
+                                    <li class="pt-3"><a href="" class=" text-decoration-none text-white hover2 t-5 work-sans">Suppliers</a></li>
+                                    <li class="pt-3"><a href="" class=" text-decoration-none text-white hover2 t-5 work-sans">Delivery & returns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6 pt-4">
+                        <div class="ms-sm-4 ms-0">
+                            <div class="footer-title ">
+                                <h5 class="text-white geometric ls-1 ms-3">Information3</h5>
+                            </div>
+                            <div class="footer-list pt-4">
+                                <ul type="circle" class="text-white">
+                                    <li><a href="account.html" class=" text-decoration-none text-white hover2 t-5 work-sans">My account</a></li>
+                                    <li class="pt-3"><a href="about.html" class=" text-decoration-none text-white hover2 t-5 work-sans">About us</a></li>
+                                    <li class="pt-3"><a href="" class=" text-decoration-none text-white hover2 t-5 work-sans">Wish List</a></li>
+                                    <li class="pt-3"><a href="" class=" text-decoration-none text-white hover2 t-5 work-sans">Returns</a></li>
+                                    <li class="pt-3"><a href="" class=" text-decoration-none text-white hover2 t-5 work-sans">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
-        </div>
-    </div>
-    <!--====== Details-Video Modal Part End ======-->
-
-    
-    <!--====== Details Size-Guide Model Part Start ======-->
-    <div class="modal1 ">
-        <div class="modal__dialog">
-            <div class="modal__content w-100">
-                <div data-close class="modal__close">
-                    <i class="fas fa-close"></i>
-                </div>
-                <div class="modal-body">
-                    <table class="table table-sm">
-                        <tbody class="text-white">
-                            <tr>
-                                <td class="cun-name"><span>UK</span></td>
-                                <td>18</td>
-                                <td>20</td>
-                                <td>22</td>
-                                <td>24</td>
-                                <td>26</td>
-                            </tr>
-                            <tr>
-                                <td class="cun-name"><span>European</span></td>
-                                <td>46</td>
-                                <td>48</td>
-                                <td>50</td>
-                                <td>52</td>
-                                <td>54</td>
-                            </tr>
-                            <tr>
-                                <td class="cun-name"><span>usa</span></td>
-                                <td>14</td>
-                                <td>16</td>
-                                <td>18</td>
-                                <td>20</td>
-                                <td>22</td>
-                            </tr>
-                            <tr>
-                                <td class="cun-name"><span>Australia</span></td>
-                                <td>28</td>
-                                <td>10</td>
-                                <td>12</td>
-                                <td>14</td>
-                                <td>16</td>
-                            </tr>
-                            <tr>
-                                <td class="cun-name"><span>Canada</span></td>
-                                <td>24</td>
-                                <td>18</td>
-                                <td>14</td>
-                                <td>42</td>
-                                <td>36</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--====== Details Size-Guide Model Part End ======-->
-
-    <!--====== Details Shipping Model Part Start ======-->
-    <div class="modal " id="shipping" tabindex="-1" role="dialog" aria-labelledby="shippingLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content bg-shade">
-                <div class="modal-body ">
-                    <div class="d-flex align-items-center justify-content-between position-relative">
-                        <h4 class="text-white work-sans ">Shipping policy of our store</h4>
-                        <button type="button" class="close bg-transparent" data-dismiss="modal" aria-label="Close">
-                            <i class="fas fa-close"></i>
-                        </button>
-                    </div>
-                    <div>
-                        <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
-                            hendrerit in vulputate</p>
-                        <ul class="list-unstyled text-white pt-3">
-                            <li>1-2 business days (Typically by end of day)</li>
-                            <li>30 days money back guaranty</li>
-                            <li>24/7 live support</li>
-                            <li>odio dignissim qui blandit praesent</li>
-                            <li>luptatum zzril delenit augue duis dolore</li>
-                            <li>te feugait nulla facilisi.</li>
-                            <li>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-                            </li>
-                            <li>possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum</li>
-                        </ul>
-                        <ul class="list-unstyled text-white pt-2">
-                            <li>claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                etiam</li>
-                            <li>processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica,
-                                quam</li>
-                            <li>nunc putamus parum claram, anteposuerit litterarum formas humanitatis per</li>
-                        </ul>
-                        <ul class="list-unstyled text-white pt-2">
-                            <li>seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant
-                                sollemnes in futurum.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--====== Details Size-Guide Model Part End ======-->
-
-    <!--====== Details AskMe Model Part Start ======-->
-
-    <div class="modal " id="ask" tabindex="-1" role="dialog" aria-labelledby="askLabel">
-        <div class="modal-dialog " role="document">
-            <div class="modal-content bg-shade">
-                <div class="modal-body ">
-                    <div class="d-flex border-bottom align-items-center justify-content-between position-relative">
-                        <h4 class="text-white work-sans ">Have a question?</h4>
-                        <button type="button" class="close bg-transparent" data-dismiss="modal" aria-label="Close">
-                            <i class="fas fa-close"></i>
-                        </button>
-                    </div>
-                    <div class="row pt-4">
-                        <div class="col-lg-6">
-                            <input type="text" class="w-100 border-0 py-2 ps-2" style="outline: none;" name="" id="" placeholder="Name *">
+            <div class="footer-bottom mt-4 py-3">
+                <div class="container ">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
+                            <p class="text-white work-sans ">Copyright Boake | Built with Boake by HasThemes.</p>
                         </div>
-                        <div class="col-lg-6 pt-4 pt-sm-0">
-                            <input type="email" class="w-100 border-0 py-2 ps-2" style="outline: none;" name="" id="" placeholder="Email *">
-                        </div>
-                        <div class="col-lg-12 py-4">
-                            <input type="tel" class="w-100 border-0 py-2 ps-2" style="outline: none;" name="" id="" placeholder="Phone *">
-                        </div>
-                        <div class="col-lg-12 ">
-                            <input type="url" class="w-100 border-0 py-2 ps-2" style="outline: none;" name="" id="" placeholder="Reference URL *">
-                        </div>
-                        <div class="col-lg-12 py-4">
-                            <textarea class="w-100 border-0 py-2 ps-2 " style="outline: none;" name="" id="" placeholder="Write Message *" ></textarea>
-                        </div>
-                        <div class="col-lg-12 text-center">
-                            <button type="submit" class="text-white px-5 py-3 bg-grey2 work-sans  hover3 t-5 border-0" style="outline: none;">Send</button>
+                        <div class="col-lg-6 col-12 text-sm-end text-center"> 
+                            <a href="">
+                                <img src="assets/img/footer-cards.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--====== Details AskMe Model Part Start ======-->
-
+    </footer>
+    <!--======================== Footer Part End ========================-->
 
 
 
@@ -835,16 +669,16 @@
     <script src="assets/js/jquerry.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
-        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/is-in-viewport/3.0.4/isInViewport.min.js"
-        integrity="sha512-eAT5Hvi9/Yx33YvSUPOpAYEA3HnUt5oKCSyPGRQwNgqD7K/90JRpFnkaL1M6ROZtLkckQKJ4WYh9cS7Urr4YjA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/is-in-viewport/3.0.4/isInViewport.min.js" integrity="sha512-eAT5Hvi9/Yx33YvSUPOpAYEA3HnUt5oKCSyPGRQwNgqD7K/90JRpFnkaL1M6ROZtLkckQKJ4WYh9cS7Urr4YjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript" src="path_to/jquery.js"></script>
+    <script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
+                                                                
 </body>
-
 </html>
