@@ -1,4 +1,11 @@
+//Preloader
+$(window).on('load', function () {
+    $('#hola').delay(500).fadeOut(500);
+});
+
 $(document).ready(function () {
+    
+
     // Sticky Menu
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 200) {
