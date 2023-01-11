@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     //Preloader
     $(window).on('load', function () {
         $('#hola').delay(500).fadeOut(500);
@@ -475,6 +475,176 @@ $(document).ready(function () {
         ]
     })
 
+
+    //Hot-Sale-Slider
+    $('.hot-sale-slider').slick({
+        dots: false,
+        prevArrow: $('.prev-hot'),
+        nextArrow: $('.next-hot'),
+        infinite: true,
+        speed: 700,
+        arrows: true,
+        cssEase: 'linear',
+        autoplay: false,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
+
+    //Best-Sale-Slider
+    $('.best-sale-slider').slick({
+        dots: false,
+        prevArrow: $('.prev-best'),
+        nextArrow: $('.next-best'),
+        infinite: true,
+        speed: 700,
+        arrows: true,
+        cssEase: 'linear',
+        autoplay: false,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
+
+    //Up-Sell-Slider
+    $('.up-sell-slider').slick({
+        dots: false,
+        prevArrow: $('.prev-up'),
+        nextArrow: $('.next-up'),
+        infinite: true,
+        speed: 700,
+        arrows: true,
+        cssEase: 'linear',
+        autoplay: false,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
+
+    //Latest-Blog
+    $('.latest-blog-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 700,
+        arrows: false,
+        cssEase: 'linear',
+        autoplay: false,
+        autoplaySpeed: 2000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
 
 
     //Modal
