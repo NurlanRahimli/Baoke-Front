@@ -1341,6 +1341,31 @@ html {
 }
 
 
+.ht-product-action-mobile {
+  background-color: #00001D;
+  -webkit-box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  width: 100px;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all ease .6s;
+  transition: all ease .6s;
+}
+
+.border:hover .ht-product-action-mobile {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+
 /* Sale */
 .sale {
   position: absolute;
