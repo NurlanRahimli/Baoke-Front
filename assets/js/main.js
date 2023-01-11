@@ -1,11 +1,9 @@
-//Preloader
-$(window).on('load', function () {
-    $('#hola').delay(500).fadeOut(500);
-});
-
 $(document).ready(function () {
     
-
+    //Preloader
+    $(window).on('load', function () {
+        $('#hola').delay(500).fadeOut(500);
+    });
     // Sticky Menu
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 200) {
@@ -507,12 +505,41 @@ $(document).ready(function () {
         return false;
     });
 
-    
+    //Shop-Change-View
+    let one = document.querySelector('one')
+    let many = document.querySelector('many')
+    $('.one-one').click(function (e) {
+        e.preventDefault()
+        $('.one').css('display', 'block')
+        $('.many').css('display', 'none')
+    })
+    $('.many-many').click(function (e) {
+        e.preventDefault()
+        $('.many').css('display', 'block')
+        $('.one').css('display', 'none')
+    })
+
 
 
 })
 
 
+
+//Shop-Accordion
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active-acc");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
 
 
 //Modal
@@ -643,3 +670,4 @@ tabs.onclick = e => {
         element.classList.add("active");
     }
 }
+
