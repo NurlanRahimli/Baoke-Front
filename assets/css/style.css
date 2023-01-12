@@ -2,6 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 /* Preloader */
 .loader {
   width: 48px;
@@ -147,6 +149,10 @@ html {
   background-color: #333;
 }
 
+.bg-grey3 {
+  background-color: #F6F6F6;
+}
+
 .bg-facebook {
   background-color: #3b5998;
 }
@@ -187,7 +193,10 @@ html {
 .fs-70 {
   font-size: 70px;
 }
-.fs-15{font-size: 15px;}
+
+.fs-15 {
+  font-size: 15px;
+}
 
 
 /* Border-Radiuses */
@@ -228,7 +237,7 @@ html {
   width: 23px;
 }
 
-.w-30{
+.w-30 {
   width: 30%;
 }
 
@@ -236,9 +245,15 @@ html {
   width: 20%;
 }
 
+.w-15 {
+  width: 15%;
+}
+
+
 .w-10 {
   width: 100px;
 }
+
 
 /* Height */
 
@@ -249,7 +264,7 @@ html {
   -moz-box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.75);
 }
 
-.image-border{
+.image-border {
   border: 7px solid #fff;
 }
 
@@ -725,13 +740,14 @@ html {
   opacity: 1;
 }
 
-.pa-hot-left{
+.pa-hot-left {
   position: absolute;
   left: -1%;
   top: 50%;
   transform: translateY(-50%);
 }
-.pa-hot-right{
+
+.pa-hot-right {
   position: absolute;
   right: 0;
   top: 50%;
@@ -972,13 +988,13 @@ html {
   margin-bottom: 30px;
 }
 
-.scrollbasket{
+.scrollbasket {
   overflow: scroll;
-    height: 200px;
-    overflow-x: hidden;
+  height: 200px;
+  overflow-x: hidden;
 }
 
-.scrollbasket li:last-child{
+.scrollbasket li:last-child {
   padding-bottom: 30px;
 }
 
@@ -1985,7 +2001,7 @@ html {
     border-radius: 50%;
   }
 
-  
+
 
 }
 
@@ -2020,15 +2036,17 @@ html {
 input[type=radio] {
   display: none;
 }
-input[type=radio]:checked + label span {
+
+input[type=radio]:checked+label span {
   transform: scale(1.25);
 }
-input[type=radio]:checked + label .color-border {
+
+input[type=radio]:checked+label .color-border {
   border: 2px solid #fff;
 }
 
 /* Color */
-.color label {
+.color-acc label {
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -2036,10 +2054,12 @@ input[type=radio]:checked + label .color-border {
   border-radius: 100%;
   cursor: pointer;
 }
-.color label:hover span {
+
+.color-acc label:hover span {
   transform: scale(1.25);
 }
-.color label span {
+
+.color-acc label span {
   display: block;
   border-radius: 100%;
   width: 100%;
@@ -2053,6 +2073,7 @@ input[type=radio]:checked + label .color-border {
   position: relative;
   display: inline-block;
 }
+
 .radio__button label {
   cursor: pointer;
   color: #9f9f9f;
@@ -2068,24 +2089,29 @@ input[type=radio]:checked + label .color-border {
   box-shadow: 0px 0px 5px #e5e5e5;
   transition: all 120ms ease-in-out;
 }
+
 .radio__button label p {
   font-size: 12px;
   margin: 0;
 }
+
 .radio__button label:before {
   font-family: "Ionicons";
   content: attr(data-icon);
   display: block;
 }
+
 .radio__button input[type=radio] {
   display: none;
 }
-.radio__button input[type=radio]:checked + label {
+
+.radio__button input[type=radio]:checked+label {
   color: #fff;
   border: 1px solid #ff6162;
   background: #ff6162;
 }
-.radio__button input[type=radio]:disabled + label {
+
+.radio__button input[type=radio]:disabled+label {
   cursor: not-allowed;
   color: #ccc;
   background: #f5f5f5;
@@ -2440,10 +2466,12 @@ td {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: transparent;
 }
+
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
+
 .filter-value-counter {
   display: flex;
   justify-content: space-between;
@@ -2457,12 +2485,12 @@ span.filter-value-selected {
 }
 
 
-select option{
+select option {
   color: black;
 }
 
 
-.one{
+.one {
   display: none;
 }
 
@@ -2478,7 +2506,40 @@ ul li a.pagi {
   -webkit-box-shadow: 0 0 12px 0.8px rgb(0 0 0 / 10%);
   box-shadow: 0 0 12px 0.8px rgb(0 0 0 / 10%);
 }
-.pagi-active{
+
+.pagi-active {
   background-color: #ff6162 !important;
   color: #fff !important;
+}
+
+
+
+/* Checkout-Styles */
+.checkout-count {
+  position: absolute;
+  color: #fff;
+  background-color: #333;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  top: -10%;
+  right: -1%;
+}
+
+/* Checkout-Accordion */
+
+.active-check.accordion-heading::before {
+  transform: rotate(-180deg);
+}
+
+.not-active.accordion-heading::before {
+  transform: rotate(0deg);
+}
+
+.accordion-content {
+  display: none;
 }

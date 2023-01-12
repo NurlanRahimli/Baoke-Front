@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     //Preloader
     $(window).on('load', function () {
         $('#hola').delay(500).fadeOut(500);
@@ -689,6 +688,12 @@ $(document).ready(function () {
         $('.one').css('display', 'none')
     })
 
+    //Checkout-Accordion
+    $(".accordion-items").on("click", ".accordion-heading", function () {
+        $(this).toggleClass("active-check").next().slideToggle();
+        $(".accordion-content").not($(this).next()).slideUp(300);
+        $(this).siblings().removeClass("active-check");
+    });
 
 
 })
@@ -710,6 +715,7 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
 
 
 //Modal
