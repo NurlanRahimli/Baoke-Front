@@ -698,44 +698,6 @@ $(document).ready(function () {
 
 })
 
-//Show password
-const togglePassword = document.querySelector("#togglePassword");
-const password = document.querySelector("#password");
-
-togglePassword.addEventListener("click", function () {
-    // toggle the type attribute
-    const type = password.getAttribute("type") === "password" ? "text" : "password";
-    password.setAttribute("type", type);
-
-    // toggle the icon
-    this.classList.toggle("bi-eye");
-});
-
-// prevent form submit
-const form = document.querySelector("form");
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-});
-
-
-//Shop-Accordion
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active-acc");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    });
-}
-
-
-
 //Modal
 const modalTrigger = document.querySelectorAll('[data-modal]'),
     modal = document.querySelector('.modal1'),
@@ -775,6 +737,45 @@ document.addEventListener('keydown', (e) => {
     //     closeModal()
     // }
 });
+
+
+//Shop-Accordion
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active-acc");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
+
+
+//Tab
+const tabs = document.querySelector(".wrapper");
+const tabButton = document.querySelectorAll(".tab-button");
+const contents = document.querySelectorAll(".content");
+
+tabs.onclick = e => {
+    const id = e.target.dataset.id;
+    if (id) {
+        tabButton.forEach(btn => {
+            btn.classList.remove("active");
+        });
+        e.target.classList.add("active");
+
+        contents.forEach(content => {
+            content.classList.remove("active");
+        });
+        const element = document.getElementById(id);
+        element.classList.add("active");
+    }
+}
 
 
 //Timer
@@ -844,26 +845,21 @@ function setClock(selector, endtime) {
 setClock('.timer', deadline);
 
 
-//Tab
-const tabs = document.querySelector(".wrapper");
-const tabButton = document.querySelectorAll(".tab-button");
-const contents = document.querySelectorAll(".content");
+//Show password
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector("#password");
 
-tabs.onclick = e => {
-    const id = e.target.dataset.id;
-    if (id) {
-        tabButton.forEach(btn => {
-            btn.classList.remove("active");
-        });
-        e.target.classList.add("active");
+togglePassword.addEventListener("click", function () {
+    // toggle the type attribute
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
 
-        contents.forEach(content => {
-            content.classList.remove("active");
-        });
-        const element = document.getElementById(id);
-        element.classList.add("active");
-    }
-}
+    // toggle the icon
+    this.classList.toggle("bi-eye");
+});
 
-
-
+// prevent form submit
+const form = document.querySelector("form");
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+});
