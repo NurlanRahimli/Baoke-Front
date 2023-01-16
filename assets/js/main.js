@@ -474,7 +474,6 @@ $(document).ready(function () {
         ]
     })
 
-
     //Hot-Sale-Slider
     $('.hot-sale-slider').slick({
         dots: false,
@@ -614,6 +613,49 @@ $(document).ready(function () {
         autoplay: false,
         autoplaySpeed: 2000,
         slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
+
+    //Related-Products
+    $('.related-products-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 700,
+        prevArrow: $('.prev-related'),
+        nextArrow: $('.next-related'),
+        arrows: true,
+        cssEase: 'linear',
+        autoplay: false,
+        autoplaySpeed: 2000,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
             {

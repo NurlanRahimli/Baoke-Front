@@ -854,6 +854,58 @@ html {
 }
 
 
+
+/* related-products */
+.prev-related {
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.next-related {
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  border-radius: 100%;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.prev-related i {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.next-related i {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.olo7:hover .prev-related {
+  opacity: 1;
+}
+
+.olo7:hover .next-related {
+  opacity: 1;
+}
+
+
+
 /*===== Slider-Dots Style =====*/
 
 
